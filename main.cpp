@@ -12,6 +12,9 @@ std::vector<char> board{
 	'o','.','o','.','o','.','o','.',
 };
 
+char player1 = 'x';
+char player2 = 'o';
+
 struct Coords {
 	int x;
 	int y;
