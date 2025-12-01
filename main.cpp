@@ -44,6 +44,25 @@ void movePawn(int from, int to) {
 	board.at(from) = '.';
 }
 
+bool hasAnyPawn(char player) {
+	for (auto cell : board) {
+		if (cell == player)
+			return true;
+	}
+
+	return false;
+}
+
+void checkWinCondition() {
+	if (!hasAnyPawn('o')) {
+		std::cout << "Player 'x' wins" << std::endl;
+	}
+
+	if (!hasAnyPawn('x')) {
+		std::cout << "Player 'o' wins" << std::endl;
+	}
+}
+
 void capture(int from, int jump, int to) {
 	movePawn(from, jump);
 	movePawn(jump, to);
@@ -53,17 +72,20 @@ int main() {
 	printBoard();
 	currentPlayer = player2;
 	movePawn(coordsToIndex({ 0,5 }), coordsToIndex({ 1,4 }));
+	checkWinCondition();
 
 	printBoard();
 	currentPlayer = player1;
 	movePawn(coordsToIndex({ 3,2 }), coordsToIndex({ 2,3 }));
-	
+	checkWinCondition();
+
 	printBoard();
 	currentPlayer = player2;
 	capture(
 		coordsToIndex({ 1,4 }),
 		coordsToIndex({ 2,3 }),
 		coordsToIndex({ 3,2 }));
+	checkWinCondition();
 
 	printBoard();
 }
