@@ -103,25 +103,17 @@ void game() {
 }
 
 #include "raylib.h"
+#include "Scene.h"
 
 int main() {
+	Scene scene;
+
 	InitWindow(640, 640, "Draughts");
 	SetTargetFPS(60);
 
 	while (!WindowShouldClose()) {
 		BeginDrawing();
-		ClearBackground(RAYWHITE);
-
-		int cell = 640 / 8;
-
-		for (int y = 0; y < 8; y++) {
-			for (int x = 0; x < 8; x++) {
-				bool dark = (x + y) % 2 == 1;
-				DrawRectangle(x * cell, y * cell, cell, cell,
-					dark ? DARKBROWN : LIGHTGRAY);
-			}
-		}
-
+		scene.draw();
 		EndDrawing();
 	}
 
