@@ -13,10 +13,57 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\Interfaces">
+      <UniqueIdentifier>{8041c103-dbb8-48f8-a3c1-f5ded483a2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Drawables">
+      <UniqueIdentifier>{2c1f43d8-287d-4673-9e0e-35d3198faca4}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="GameState.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Board.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Scene.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="Piece.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameState.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="Drawable.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Entity.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="InputHandler.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="Piece.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="Board.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
