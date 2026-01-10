@@ -20,11 +20,11 @@ public:
 		EndDrawing();
 	}
 
-	void add(std::unique_ptr<IDrawable> drawable) {
-		drawables.push_back(std::move(drawable));
+	void add(IDrawable* drawable) {
+		drawables.push_back(drawable);
 	}
 
 private:
-	std::vector<std::unique_ptr<IDrawable>> drawables;
+	std::vector<IDrawable*> drawables;
 };
 

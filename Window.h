@@ -9,7 +9,8 @@ public:
 	friend class Board;
 
 	Window(std::string title, int width, int height)
-		: width(width)
+		: title(title)
+		, width(width)
 		, height(height)
 	{
 		InitWindow(width, height, title.c_str());

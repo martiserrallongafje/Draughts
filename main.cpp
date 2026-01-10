@@ -120,9 +120,9 @@ int main() {
 	GameState gameState(board.get(), player1.get(), player2.get());
 
 	Scene scene;
-	scene.add(std::move(board));
-	scene.add(std::move(player1));
-	scene.add(std::move(player2));
+	scene.add(board.get());
+	scene.add(player1.get());
+	scene.add(player2.get());
 
 	while (!WindowShouldClose()) {
 		scene.draw();
