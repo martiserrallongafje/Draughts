@@ -2,10 +2,9 @@
 #include "Board.h"
 #include "Player.h"
 
-#include <memory>
-
 class GameState {
 public:
+	GameState() = default;
 	GameState(Board* board, Player* current, Player* next)
 		: board(board)
 		, currentPlayer(current)
@@ -14,7 +13,7 @@ public:
 	}
 
 private:
-	Board* board;
-	Player* currentPlayer;
-	Player* nextPlayer;
+	Board* board = nullptr;
+	Player* currentPlayer = nullptr;
+	Player* nextPlayer = nullptr;
 };

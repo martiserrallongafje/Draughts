@@ -102,29 +102,15 @@ void game() {
 
 }
 
-#include "raylib.h"
-#include "Scene.h"
-#include "Window.h"
-#include "GameState.h"
-
-static constexpr const char* kTitle = "Draughts";
-static constexpr int kWidth = 640;
-static constexpr int kHeight = 640;
+#include "Game.h"
 
 int main() {
-	Window window(kTitle, kWidth, kHeight);
-
-	auto board = std::make_unique<Board>(window);
-	auto player1 = std::make_unique<Player>();
-	auto player2 = std::make_unique<Player>();
-	GameState gameState(board.get(), player1.get(), player2.get());
-
-	Scene scene;
-	scene.add(board.get());
-	scene.add(player1.get());
-	scene.add(player2.get());
-
-	while (!WindowShouldClose()) {
-		scene.draw();
+	Game& game = Game::Get();
+	game.initialize();
+	while (game.handleEvents()) {
+		game.update();
+		game.render();
 	}
+
+	return 0;
 }

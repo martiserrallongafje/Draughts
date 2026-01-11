@@ -8,6 +8,7 @@ class Window {
 public:
 	friend class Board;
 
+	Window() = default;
 	Window(std::string title, int width, int height)
 		: title(title)
 		, width(width)
@@ -23,6 +24,6 @@ public:
 
 private:
 	std::string title;
-	int width;
-	int height;
+	int width = 0;
+	int height = 0;
 };
