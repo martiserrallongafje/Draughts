@@ -9,14 +9,92 @@
       <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
       <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
     </Filter>
-    <Filter Include="Archivos de recursos">
+    <Filter Include="Archivos de encabezado\Interfaces">
+      <UniqueIdentifier>{8041c103-dbb8-48f8-a3c1-f5ded483a2dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Drawables">
+      <UniqueIdentifier>{2c1f43d8-287d-4673-9e0e-35d3198faca4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Drawables\Archivos de recursos">
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Archivos de encabezado\Utils">
+      <UniqueIdentifier>{5d9e48c4-5e7e-4600-bff3-fff510a452e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Archivos de encabezado\Models">
+      <UniqueIdentifier>{da7532aa-1a44-4fd1-b452-e192d9848b06}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="src\Board.cpp">
       <Filter>Archivos de origen</Filter>
     </ClCompile>
+    <ClCompile Include="src\Cell.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\GameState.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Piece.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Player.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Scene.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Window.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\Game.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+    <ClCompile Include="src\DrawUtils.cpp">
+      <Filter>Archivos de origen</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\Board.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Piece.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Scene.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Cell.h">
+      <Filter>Archivos de encabezado\Drawables</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Entity.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\InputHandler.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Drawable.h">
+      <Filter>Archivos de encabezado\Interfaces</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Player.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Window.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\GameState.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Game.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
+    <ClInclude Include="src\DrawUtils.h">
+      <Filter>Archivos de encabezado\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="src\PieceModel.h">
+      <Filter>Archivos de encabezado\Models</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
